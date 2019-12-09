@@ -10,3 +10,14 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 41)
+
+@newStore = gets.chomp
+store8 = Store.create(
+  name: @newStore, 
+)
+
+puts store8.errors.messages
+
+
